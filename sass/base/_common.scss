@@ -1,0 +1,27 @@
+body {
+    background-color: var(--color-bg-hero);
+    font-family: "DM sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+    @include mobile {
+        width: 320px;
+        padding: 0 20px 0 20px;
+    }
+
+    @include tablet {
+        width: 768px;
+        padding: 0 32px 0 32px;
+    }
+
+    @include desktop {
+        width: 1280px;
+        padding: 0 16px 0 16px;
+    }
+}

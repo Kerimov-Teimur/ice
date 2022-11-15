@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet" />
+
+  <!-- animate -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Normalize -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+  <!-- Style -->
+  <link rel="stylesheet" href="./css/index.min.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="page-header">
+    <div class="container header-container">
+      <nav class="navigate">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo/logo.png" alt="logo" width="200" height="50" />
+        </a>
+
+        <ul class="nav-menu list">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href=""><span class="nav-menu-text">Home</span></a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href="">About us</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href="">How it’s made?</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href="">Our products</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="menu-btn open" data-menu-open>
+        <svg class="menu-icon" width="20" height="12" aria-label="перемикач мобільного меню">
+            <use href="./images/sprite/sprite.svg#icon-burger"></use>
+          </svg>
+      </button>
+
+      <button class="modal-btn" type="button">Buy now</button>
+    </div>
+    </div>
+    <div class="menu-mob is-hidden" data-menu>
+      <div class="container mob-container">
+        <button type="button" class="menu-btn-close close" data-menu-close>
+          <svg class="close-icon" width="14" height="14" aria-label="перемикач мобільного меню">
+              <use href="./images/sprite/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <button class="menu-modal-btn" type="button">Buy now</button>
+
+        <ul class="menu-nav-mob list">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href=""><span class="nav-menu-text">Home</span></a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href="">About us</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href="">How it’s made?</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href="">Our products</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link link" href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <script src="./js/burger.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>

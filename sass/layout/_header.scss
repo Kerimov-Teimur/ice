@@ -1,0 +1,170 @@
+// ========== logo
+
+
+// ============header
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include desktop {
+        justify-content: space-between;
+    }
+}
+
+
+
+//                  navigate
+.navigate {
+    padding: 8px 0 8px 0;
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-left: 128px;
+
+    @media screen  and (max-width: 1279px) {
+        display: none;
+    }
+}
+
+.nav-menu-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #FFFFFF;
+
+    &:hover, &:focus {
+        color: #D41443;
+    }
+}
+
+.nav-menu-item {
+    @media screen and (max-width: 1279px) {
+        display: block;
+        border-top: 1px solid #e18298;
+        padding-top: 11px;
+        padding-bottom: 12px;
+    }
+}
+
+.nav-menu-text {
+    color: #D41443;
+}
+
+
+// -------------------------------------------------------
+
+.modal-btn {
+    width: 160px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.286;
+    color: #d41443;
+    background-color: #fff;
+    border: transparent;
+    border-radius: 22px;
+    outline: none;
+
+    @include tablet {
+        margin-left: 32px;
+    }
+
+    @include desktop {
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+}
+
+.menu-btn {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+
+    @include mobile {
+            margin-left: auto;
+        }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.menu-btn-close {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+}
+
+// =============mobile menu
+
+.mob-container {
+    display: flex;
+    
+}
+
+.menu-mob {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #E17992;
+    width: 250px;
+    height: 502px;
+
+    padding-top: 60px;
+    
+    z-index: 1;
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+
+    >.container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    @include tablet {
+        width: 254px;
+        height: 100%;
+    }
+}
+
+.menu-modal-btn {
+    display: block;
+    width: 209px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.286;
+    color: #d41443;
+    background-color: #fff;
+    border: transparent;
+    border-radius: 22px;
+    outline: none;
+    margin-bottom: 32px;
+
+}
+
+// --------------------------------------------
+
+
+// ---------------------------------------------
